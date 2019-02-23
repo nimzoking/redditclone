@@ -4,30 +4,34 @@
 
 {% block content %}
 <h1>About Reddit</h1>
-<p>Well let me see if this works, must remember to put block content tags in place!</p>
-<div class="container">
-    <div class="row">
-        <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{% static 'images/purse.jpg' %}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Purse</h5>
-                    <p class="card-text">Use this space to put description of product in place, and then use the link to go to detail</p>
-                    <a href="#" class="btn btn-primary">More Details ....</a>
-                </div>
-            </div>
+ <div class="row">
+    <div class="col-sm-6">
+        <div class="card border-0">
+        <div class="card-body">
+            <h5 class="card-title">Tilly's Handbag</h5>
+            <img class="img-thumbnail border-0" src="{% static 'images/handbag.jpg' %}" alt="Card image cap" style="width: 200px;height: 200px;">
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
-    <div class="row">
-        <div class="col-sm">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{% static 'images/handbag.jpg' %}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Handbag</h5>
-                    <p class="card-text">Product YY - Use this space to put description of product in place, and then use the link to go to detail</p>
-                    <a href="#" class="btn btn-primary">More Details ....</a>
-                </div>
-            </div>
         </div>
     </div>
+    <div class="col-sm-6">
+        <div class="card border-0">
+        <div class="card-body">
+            <h5 class="card-title">Tilly's Purse</h5>
+            <img class="img-thumbnail border-0" src="{% static 'images/purse.jpg' %}" alt="Card image cap" style="width: 200px;height: 200px;">
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+        </div>
+    </div>
+    </div>
+<div class="card sm-6 border-primary">
+  <div class="card-body bg-primary text-white">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small class="text-white-50">Last updated 3 mins ago</small></p>
+  </div>
 </div>
+
 {% endblock content %}
