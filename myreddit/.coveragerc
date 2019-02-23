@@ -1,0 +1,5 @@
+[run]
+include = myreddit/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin
